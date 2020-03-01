@@ -31,8 +31,7 @@ def bubble_sort( arr ):
             length = len(arr)
             if idx < length - 1:
                 if num > arr[rightElement]:
-                    arr[idx] = arr[rightElement]
-                    arr[rightElement] = num
+                    arr[idx], arr[rightElement] = arr[rightElement], num
                     swap = True
     return arr
 
