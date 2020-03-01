@@ -12,14 +12,11 @@ def selection_sort( arr ):
         
         for idx,num in enumerate(arr[cur_index:], cur_index):
             if num < arr[smallest_index]:
-                smallest_index = idx      
+                smallest_index = idx     
 
         if cur_index != smallest_index:
-            smallest_index_val = arr[smallest_index]
-            cur_index_val = arr[cur_index]
             #swap values in the array
-            arr[cur_index] = smallest_index_val
-            arr[smallest_index] = cur_index_val
+            arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
 
     return arr
     
