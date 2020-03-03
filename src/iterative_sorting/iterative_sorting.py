@@ -1,12 +1,9 @@
 # TO-DO: Complete the selection_sort() function below 
 def selection_sort( arr ):
-    og_copy = arr.copy()
     # loop through n-1 elements
-    print(f'sorting {arr}..\n')
     for i in range(0, len(arr) - 1):
         cur_index = i
         smallest_index = cur_index
-        new_smallest_index = smallest_index
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
         
@@ -28,8 +25,7 @@ def bubble_sort( arr ):
         swap = False
         for idx,num in enumerate(arr):
             rightElement = idx + 1
-            length = len(arr)
-            if idx < length - 1:
+            if idx < len(arr)- 1:
                 if num > arr[rightElement]:
                     arr[idx], arr[rightElement] = arr[rightElement], num
                     swap = True
