@@ -11,19 +11,6 @@ def merge( left, right ):
     elements = len( left ) + len( right )
     merged_arr = [0] * elements
     # TO-DO
-    while len(left) > 0 and len(right) > 0:
-        if left[0] <= right[0]:
-           merged_arr.append(left[0])
-           left = left[0:]
-        else:
-            merged_arr.append(right[0])
-            right = right[0:]
-    if len(left) > 0:
-        merged_arr.append(left)
-    if len(right) > 0:
-        merged_arr.append(right)
-    
-    return merged_arr
 
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
